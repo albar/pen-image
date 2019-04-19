@@ -1,7 +1,6 @@
 FROM alpine:latest
 
-RUN  echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
-    && apk update --no-cache \
+RUN  apk update --no-cache \
     && apk add --no-cache \
         curl \
         fish \
